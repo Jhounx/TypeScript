@@ -87,7 +87,7 @@
         "typescript@*": "$typescript"
     },
     "scripts": {
-        "test": "hereby runtests-parallel --light=false",
+        "test": "sh ./is_changed.sh && hereby runtests-parallel --light=false",
         "test:eslint-rules": "hereby run-eslint-rules-tests",
         "build": "npm run build:compiler && npm run build:tests",
         "build:compiler": "hereby local",
